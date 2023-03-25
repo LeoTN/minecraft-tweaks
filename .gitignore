@@ -380,5 +380,11 @@ bin/
 
 remappedSrc/
 run/
-# Exclude .jar files
+# Exclude all annoying files
 *.jar
+*.lock
+*.bin
+*.tiny
+*.receipt
+*.pom
+*.dll
