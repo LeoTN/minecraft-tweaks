@@ -380,3 +380,5 @@ bin/
 
 remappedSrc/
 run/
+# Exclude .jar files
+*.jar
