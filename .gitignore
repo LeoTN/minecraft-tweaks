@@ -355,3 +355,9 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 .vscode/settings.json
+.gradle/8.0.1/dependencies-accessors/gc.properties
+.gradle/8.0.1/gc.properties
+.gradle/buildOutputCleanup/cache.properties
+.gradle/vcs-1/gc.properties
+build/classes/java/main/minecraft-tweaks-refmap.json
+build/loom-cache/mixin-map-net.fabricmc.yarn.1_19_4.1.19.4+build.1-v2.main.tiny
