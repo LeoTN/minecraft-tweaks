@@ -27,6 +27,6 @@
     "java": ">=17"
   },
   "suggests": {
-    "another-mod": "heheha"
+    "another-mod": "*"
   }
 }
