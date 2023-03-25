@@ -1,0 +1,6 @@
+
+*.jar
+*.bin
+*.lock
+*.pom
+*.class
