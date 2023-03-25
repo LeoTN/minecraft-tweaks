@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "mctweaks",
-  "version": "${version}",
+  "version": "1.0.0",
   "name": "Minecraft Tweaks",
   "description": "This mod adds various small changes to the base game's items and options to make it a more enjoyable playing experience",
   "authors": [
@@ -12,11 +12,11 @@
     "sources": "https://github.com/LeoTN/minecraft-tweaks"
   },
   "license": "1gpl - 3.0",
-  "icon": "assets/minecraft-tweaks/icon.png",
+  "icon": "assets/minecraft_tweaks/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.LeoTN.minecraft-tweaks.MinecraftTweaks"
+      "com.LeoTN.minecraft_tweaks.MinecraftTweaks"
     ]
   },
   "mixins": [],
