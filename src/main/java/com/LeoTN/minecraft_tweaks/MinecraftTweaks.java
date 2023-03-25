@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.LeoTN.minecraft_tweaks.item.ModItemGroup;
 import com.LeoTN.minecraft_tweaks.item.ModItems;
 
 public class MinecraftTweaks implements ModInitializer {
@@ -13,6 +14,8 @@ public class MinecraftTweaks implements ModInitializer {
     @Override
     public void onInitialize() {
         LOGGER.info("Minecraft Tweaks ready to load !");
+
+        ModItemGroup.registerItemGroups();
         ModItems.registerModItems();
     }
 }
