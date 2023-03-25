@@ -388,3 +388,6 @@ run/
 *.receipt
 *.pom
 *.dll
+
+# Exclude enSource directory
+enSources/*
