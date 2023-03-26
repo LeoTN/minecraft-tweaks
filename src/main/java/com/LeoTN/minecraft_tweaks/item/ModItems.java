@@ -27,7 +27,7 @@ public class ModItems {
                         new Item(new FabricItemSettings()));
 
         // dragonShart item
-        public static final Item dragonShart = registerItem("dragon_shart",
+        public static final Item dragonShard = registerItem("dragon_shard",
                         new Item(new FabricItemSettings()));
 
         // superElytraChestplate item (has to be added in future because fabric sucks at
@@ -50,7 +50,7 @@ public class ModItems {
         // A method to run the addToItemGroup method for every item
         public static void addItemsToItemGroup() {
                 addToItemGroup(ModItemGroup.MOD_ITEMS, compactElytra);
-                addToItemGroup(ModItemGroup.MOD_ITEMS, dragonShart);
+                addToItemGroup(ModItemGroup.MOD_ITEMS, dragonShard);
                 addToItemGroup(ModItemGroup.MOD_ITEMS, superElytra);
                 // addToItemGroup(ModItemGroup.MOD_ITEMS, superElytraArmor);
         }
