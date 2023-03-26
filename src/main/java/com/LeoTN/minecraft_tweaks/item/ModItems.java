@@ -29,8 +29,17 @@ public class ModItems {
 
     // superElytraChestplate item
     public static final Item superElytraChestplate = registerItem("super_elytra_chestplate",
-            new ArmorItem(ModArmorMaterials.superElytraArmor, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.dirt, EquipmentSlot.CHEST,
                     new FabricItemSettings()));
+
+    public static final Item NETHER_BRICK_HELMET = registerItem("nether_brick_helmet",
+            new ArmorItem(ModArmorMaterials.NETHER_BRICK, EquipmentSlot.HEAD, new FabricItemSettings()));
+    public static final Item NETHER_BRICK_CHESTPLATE = registerItem("nether_brick_chestplate",
+            new ArmorItem(ModArmorMaterials.NETHER_BRICK, EquipmentSlot.CHEST, new FabricItemSettings()));
+    public static final Item NETHER_BRICK_LEGGINGS = registerItem("nether_brick_leggings",
+            new ArmorItem(ModArmorMaterials.NETHER_BRICK, EquipmentSlot.LEGS, new FabricItemSettings()));
+    public static final Item NETHER_BRICK_BOOTS = registerItem("nether_brick_boots",
+            new ArmorItem(ModArmorMaterials.NETHER_BRICK, EquipmentSlot.FEET, new FabricItemSettings()));
 
     // ---------------------------------------------------------------------------------------------------------
     // Method to register a new item to minecraft
