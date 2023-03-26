@@ -29,17 +29,8 @@ public class ModItems {
 
     // superElytraChestplate item
     public static final Item superElytraChestplate = registerItem("super_elytra_chestplate",
-            new ArmorItem(new Fabric) {
-                
-            }));
-net.minecraft.entity.EquipmentSlot.CHEST
-    public static final Item NETHER_BRICK_CHESTPLATE = registerItem("nether_brick_chestplate",
             new ArmorItem(ModArmorMaterials.superElytraArmor, EquipmentSlot.CHEST,
                     new FabricItemSettings()));
-
-    public static final Item LAPIS_CHESTPLATE = registerItem("lapis_chestplate",
-            new ArmorItem(ModArmorMaterials.LAPIS,
-                    null, new FabricItemSettings()));
 
     // ---------------------------------------------------------------------------------------------------------
     // Method to register a new item to minecraft
