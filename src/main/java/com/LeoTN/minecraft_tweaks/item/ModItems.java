@@ -2,8 +2,12 @@ package com.LeoTN.minecraft_tweaks.item;
 
 import com.LeoTN.minecraft_tweaks.MinecraftTweaks;
 
+import net.fabricmc.fabric.api.entity.event.v1.FabricElytraItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.client.render.entity.feature.IronGolemCrackFeatureRenderer;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
@@ -19,6 +23,24 @@ public class ModItems {
     public static final Item superElytra = registerItem("super_elytra",
             new Item(new FabricItemSettings()));
 
+    // dragonShart item
+    public static final Item dragonShart = registerItem("dragon_shart",
+            new Item(new FabricItemSettings()));
+
+    // superElytraChestplate item
+    public static final Item superElytraChestplate = registerItem("super_elytra_chestplate",
+            new ArmorItem(new Fabric) {
+                
+            }));
+net.minecraft.entity.EquipmentSlot.CHEST
+    public static final Item NETHER_BRICK_CHESTPLATE = registerItem("nether_brick_chestplate",
+            new ArmorItem(ModArmorMaterials.superElytraArmor, EquipmentSlot.CHEST,
+                    new FabricItemSettings()));
+
+    public static final Item LAPIS_CHESTPLATE = registerItem("lapis_chestplate",
+            new ArmorItem(ModArmorMaterials.LAPIS,
+                    null, new FabricItemSettings()));
+
     // ---------------------------------------------------------------------------------------------------------
     // Method to register a new item to minecraft
     private static Item registerItem(String name, Item item) {
@@ -30,6 +52,8 @@ public class ModItems {
     // A method to run the addToItemGroup method for every item
     public static void addItemsToItemGroup() {
         addToItemGroup(ModItemGroup.MOD_ITEMS, superElytra);
+        addToItemGroup(ModItemGroup.MOD_ITEMS, dragonShart);
+        // addToItemGroup(ModItemGroup.MOD_ITEMS, superElytraArmor);
     }
 
     // Method to add an item to a desired item group
