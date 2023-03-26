@@ -19,6 +19,9 @@ import net.minecraft.util.Identifier;
 public class ModItems {
         // Place for ALL NEW ITEMS
 
+        // compactElytra item
+        public static final Item compactElytra = registerItem("compact_elytra",
+                        new Item(new FabricItemSettings()));
         // superElytra item
         public static final Item superElytra = registerItem("super_elytra",
                         new Item(new FabricItemSettings()));
@@ -46,8 +49,9 @@ public class ModItems {
         // Categories might have to be changed in the future
         // A method to run the addToItemGroup method for every item
         public static void addItemsToItemGroup() {
-                addToItemGroup(ModItemGroup.MOD_ITEMS, superElytra);
+                addToItemGroup(ModItemGroup.MOD_ITEMS, compactElytra);
                 addToItemGroup(ModItemGroup.MOD_ITEMS, dragonShart);
+                addToItemGroup(ModItemGroup.MOD_ITEMS, superElytra);
                 // addToItemGroup(ModItemGroup.MOD_ITEMS, superElytraArmor);
         }
 

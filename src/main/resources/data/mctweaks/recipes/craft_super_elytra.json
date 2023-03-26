@@ -10,17 +10,17 @@
             "item": "minecraft:nether_star"
         },
         "D": {
-            "item": "minecraft:dragon_head"
+            "item": "mctweaks:dragon_shart"
         },
         "N": {
             "item": "minecraft:netherite_block"
         },
         "E": {
-            "item": "minecraft:elytra"
+            "item": "mctweaks:compact_elytra"
         }
     },
     "result": {
-        "item": "minecraft:elytra",
+        "item": "mctweaks:super_elytra",
         "count": 1
     }
 }
