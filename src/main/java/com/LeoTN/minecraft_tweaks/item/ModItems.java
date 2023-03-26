@@ -17,54 +17,49 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    // Place for ALL NEW ITEMS
+        // Place for ALL NEW ITEMS
 
-    // superElytra item
-    public static final Item superElytra = registerItem("super_elytra",
-            new Item(new FabricItemSettings()));
+        // superElytra item
+        public static final Item superElytra = registerItem("super_elytra",
+                        new Item(new FabricItemSettings()));
 
-    // dragonShart item
-    public static final Item dragonShart = registerItem("dragon_shart",
-            new Item(new FabricItemSettings()));
+        // dragonShart item
+        public static final Item dragonShart = registerItem("dragon_shart",
+                        new Item(new FabricItemSettings()));
 
-    // superElytraChestplate item
-    public static final Item superElytraChestplate = registerItem("super_elytra_chestplate",
-            new ArmorItem(ModArmorMaterials.dirt, EquipmentSlot.CHEST,
-                    new FabricItemSettings()));
+        // superElytraChestplate item (has to be added in future because fabric sucks at
+        // this point)
+        /*
+         * public static final Item superElytraChestplate =
+         * registerItem("super_elytra_chestplate",
+         * new ArmorItem(ModArmorMaterials.dirt, EquipmentSlot.CHEST,
+         * new FabricItemSettings()));
+         */
 
-    public static final Item NETHER_BRICK_HELMET = registerItem("nether_brick_helmet",
-            new ArmorItem(ModArmorMaterials.NETHER_BRICK, EquipmentSlot.HEAD, new FabricItemSettings()));
-    public static final Item NETHER_BRICK_CHESTPLATE = registerItem("nether_brick_chestplate",
-            new ArmorItem(ModArmorMaterials.NETHER_BRICK, EquipmentSlot.CHEST, new FabricItemSettings()));
-    public static final Item NETHER_BRICK_LEGGINGS = registerItem("nether_brick_leggings",
-            new ArmorItem(ModArmorMaterials.NETHER_BRICK, EquipmentSlot.LEGS, new FabricItemSettings()));
-    public static final Item NETHER_BRICK_BOOTS = registerItem("nether_brick_boots",
-            new ArmorItem(ModArmorMaterials.NETHER_BRICK, EquipmentSlot.FEET, new FabricItemSettings()));
+        // ---------------------------------------------------------------------------------------------------------
+        // Method to register a new item to minecraft
+        private static Item registerItem(String name, Item item) {
 
-    // ---------------------------------------------------------------------------------------------------------
-    // Method to register a new item to minecraft
-    private static Item registerItem(String name, Item item) {
+                return Registry.register(Registries.ITEM, new Identifier(MinecraftTweaks.MOD_ID, name), item);
+        }
 
-        return Registry.register(Registries.ITEM, new Identifier(MinecraftTweaks.MOD_ID, name), item);
-    }
+        // Categories might have to be changed in the future
+        // A method to run the addToItemGroup method for every item
+        public static void addItemsToItemGroup() {
+                addToItemGroup(ModItemGroup.MOD_ITEMS, superElytra);
+                addToItemGroup(ModItemGroup.MOD_ITEMS, dragonShart);
+                // addToItemGroup(ModItemGroup.MOD_ITEMS, superElytraArmor);
+        }
 
-    // Categories might have to be changed in the future
-    // A method to run the addToItemGroup method for every item
-    public static void addItemsToItemGroup() {
-        addToItemGroup(ModItemGroup.MOD_ITEMS, superElytra);
-        addToItemGroup(ModItemGroup.MOD_ITEMS, dragonShart);
-        // addToItemGroup(ModItemGroup.MOD_ITEMS, superElytraArmor);
-    }
+        // Method to add an item to a desired item group
+        private static void addToItemGroup(ItemGroup group, Item item) {
+                ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
+        }
 
-    // Method to add an item to a desired item group
-    private static void addToItemGroup(ItemGroup group, Item item) {
-        ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
-    }
-
-    // A simple log message to keep track of all the items which have been
-    // initiliased so far
-    public static void registerModItems() {
-        MinecraftTweaks.LOGGER.info("Registering Mod Items for " + MinecraftTweaks.MOD_ID);
-        addItemsToItemGroup();
-    }
+        // A simple log message to keep track of all the items which have been
+        // initiliased so far
+        public static void registerModItems() {
+                MinecraftTweaks.LOGGER.info("Registering Mod Items for " + MinecraftTweaks.MOD_ID);
+                addItemsToItemGroup();
+        }
 }
