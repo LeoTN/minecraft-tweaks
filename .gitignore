@@ -380,6 +380,7 @@ bin/
 
 remappedSrc/
 run/
+
 # Exclude all annoying files
 *.jar
 *.lock
