@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:elytra"
+        },
+        {
+            "item": "minecraft:elytra"
+        },
+        {
+            "item": "minecraft:elytra"
+        },
+        {
+            "item": "minecraft:slime_block"
+        }
+    ],
+    "result": {
+        "item": "mctweaks:compact_elytra",
+        "count": 1
+    }
+}
