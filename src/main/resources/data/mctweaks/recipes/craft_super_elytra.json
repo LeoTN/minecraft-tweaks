@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#D#",
+        "NEN",
+        "#D#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:nether_star"
+        },
+        "D": {
+            "item": "mctweaks:dragon_shard"
+        },
+        "N": {
+            "item": "minecraft:netherite_block"
+        },
+        "E": {
+            "item": "mctweaks:compact_elytra"
+        }
+    },
+    "result": {
+        "item": "mctweaks:super_elytra",
+        "count": 1
+    }
+}
