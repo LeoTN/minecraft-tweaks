@@ -24,7 +24,7 @@ public class ModItems {
                         new Item(new FabricItemSettings()));
         // superElytra item
         public static final Item superElytra = registerItem("super_elytra",
-                        new Item(new FabricItemSettings()));
+                        new SuperElytra(new FabricItemSettings()));
 
         // dragonShart item
         public static final Item dragonShard = registerItem("dragon_shard",
