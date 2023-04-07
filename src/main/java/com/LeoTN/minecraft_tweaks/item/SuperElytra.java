@@ -1,7 +1,6 @@
 package com.LeoTN.minecraft_tweaks.item;
 
-import com.LeoTN.minecraft_tweaks.item.SuperElytraEntityModel;
-import com.LeoTN.minecraft_tweaks.item.SuperElytraFeatureRenderer;
+import com.LeoTN.minecraft_tweaks.client.renderer.*;
 import net.minecraft.item.ElytraItem;
 
 public class SuperElytra extends ElytraItem {
