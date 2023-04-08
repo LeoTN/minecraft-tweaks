@@ -17,6 +17,9 @@
   "entrypoints": {
     "main": [
       "com.LeoTN.minecraft_tweaks.MinecraftTweaks"
+    ],
+    "client": [
+      "com.LeoTN.minecraft_tweaks.client.SuperElytra"
     ]
   },
   "mixins": [],
