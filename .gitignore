@@ -390,5 +390,6 @@ run/
 *.pom
 *.dll
 
-# Exclude enSource directory
+# Exclude enSource and gradle directory 
 enSources/*
+gradle/*
